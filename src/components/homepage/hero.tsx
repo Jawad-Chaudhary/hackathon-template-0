@@ -12,7 +12,7 @@ export default function Hero() {
           <h1 className="text-3xl md:text-5xl font-medium tracking-wide leading-snug">
             Rocket single<br />seater
           </h1>
-          <button className="mt-4 md:mt-7 text-lg md:text-xl font-medium underline underline-offset-[12px]">
+          <button className="mt-4 md:mt-7 text-lg md:text-xl font-medium cursor-pointer underline underline-offset-[12px]">
             Shop Now
           </button>
         </div>
@@ -92,8 +92,8 @@ export default function Hero() {
             </div>
           ))}
         </div>
-        <p className="text-lg font-medium underline underline-offset-[12px] mt-14">
-          View More
+        <p className="text-lg font-medium underline underline-offset-[12px] mt-14 cursor-pointer transition-all duration-200 hover:scale-105 active:opacity-85">
+          <Link href={'/shop'}>View More</Link>
         </p>
       </main>
 

@@ -2,8 +2,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import * as React from "react"
-import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
-import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -21,15 +19,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-
-type Checked = DropdownMenuCheckboxItemProps["checked"]
-
 export default function Header() {
-
-  const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true)
-  const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false)
-  const [showPanel, setShowPanel] = React.useState<Checked>(false)
-
   return (
     <header className={`fixed top-0 left-0 right-0 z-[100] flex justify-between px-4 md:px-20 py-4 md:py-6 bg-white`}>
       {/* Left */}

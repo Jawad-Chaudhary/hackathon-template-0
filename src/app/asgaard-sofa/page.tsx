@@ -34,9 +34,9 @@ export default function AsgaardSofa() {
             <Image
               src={'/shop/asgard.png'}
               alt="product"
-              width={1000}
-              height={0}
-              className="max-w-full"
+              width={900}
+              height={900}
+              className="max-w-full md:w-[1600px] h-[500px]"
             />
           </div>
 
